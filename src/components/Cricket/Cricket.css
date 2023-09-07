@@ -1,0 +1,79 @@
+.cricket-container{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    margin: 0 20px;
+    position: relative;
+}
+.players-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 15px;
+}
+.cart-container{
+    position: fixed;
+    top: 0;
+    right: 100px;
+}
+
+
+@media screen and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+        .cricket-container{
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+            margin: 0 20px;
+            position: relative;
+        }
+        .players-container{
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 15px;
+        }
+        .cart-container{
+            position: fixed;
+            top: 0;
+            right: 25px;
+        }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+        .cricket-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 0 20px;
+            position: sticky;
+        }
+        .players-container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+            margin-top: 200px;
+        }
+        .cart-container{
+            position: absolute;
+            top: 0;
+        }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+    and (orientation: landscape) {
+        .cricket-container{
+            display: grid;
+            grid-template-columns: 2fr;
+            margin: 0 20px;
+            position: sticky;
+        }
+        .players-container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+            margin-top: 200px;
+        }
+        .cart-container{
+            position: absolute;
+            top: 0;
+        }
+}
