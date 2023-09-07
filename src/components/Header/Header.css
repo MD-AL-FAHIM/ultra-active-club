@@ -1,11 +1,15 @@
-.header-logo{
-    position: fixed;
-    top: 10px;
-    z-index: 1;
-}
 .header-logo img{
     width: 30%;
-    margin: 5px 20px;
-    padding: 0;
+    padding: 2% 3%;
+}
 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+        .header-logo{
+            padding: 2% 3%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
 }

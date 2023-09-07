@@ -1,7 +1,11 @@
-.cart{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    padding: 30px 0;
+
+@media screen and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+        /* .cart{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            padding: 30px 0;
+        } */
 }

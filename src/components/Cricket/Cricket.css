@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 4fr 2fr;
     margin: 0 20px;
-    position: relative;
 }
 .players-container{
     display: grid;
@@ -10,10 +9,10 @@
     gap: 15px;
 }
 .cart-container{
-    position: fixed;
+    position: sticky;
     top: 0;
-    margin: auto;
-    padding: 20px 0;
+    margin-bottom: auto;
+    padding-left: 10%;
 }
 
 
@@ -31,9 +30,10 @@
             gap: 15px;
         }
         .cart-container{
-            position: fixed;
+            position: sticky;
             top: 0;
-            right: 25px;
+            margin-bottom: auto;
+            padding-left: 10%;
         }
 }
 
@@ -49,11 +49,16 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 15px;
-            margin-top: 200px;
+            margin-top: 250px;
             position: sticky;
             top: 50px;
         }
         .cart-container{
+            position: fixed;
+            top: 0;
+            margin-top: auto;
+            padding: 35px 0;
+            background-color: white;
             width: 100%;
         }
 }
@@ -63,18 +68,19 @@
     and (orientation: landscape) {
         .cricket-container{
             display: grid;
-            grid-template-columns: 2fr;
+            grid-template-columns: 4fr 2fr;
             margin: 0 20px;
-            position: sticky;
+            position: relative;
         }
         .players-container{
             display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2 , 1fr);
             gap: 15px;
-            margin-top: 200px;
         }
         .cart-container{
-            position: absolute;
+            position: sticky;
             top: 0;
+            margin-bottom: auto;
+            padding-left: 10%;
         }
 }
