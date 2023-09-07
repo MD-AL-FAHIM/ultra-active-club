@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Cricket.css'
 import Player from '../Player/Player';
+import Cart from '../Cart/Cart';
 
 const Cricket = () => {
 
@@ -30,9 +31,8 @@ const Cricket = () => {
                 }
             </div>
             <div className="cart-container">
-                 <h1>Exercise Details</h1>
-                 <h3>Exercise time: {cart.length}</h3>
-                 <h3>Break time: {}</h3>
+                 <Cart
+                 cart= {cart}></Cart>
             </div>
         </div>
     );

@@ -1,5 +1,11 @@
+.header-logo{
+    position: fixed;
+    top: 10px;
+    z-index: 1;
+}
 .header-logo img{
     width: 30%;
     margin: 5px 20px;
     padding: 0;
+
 }
